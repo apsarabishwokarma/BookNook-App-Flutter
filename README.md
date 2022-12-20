@@ -3,8 +3,11 @@
 ## [Tutorial](https://www.youtube.com/playlist?list=PLrjrqTcKCnhTXI2GyPkaQF47inLp6LoIC)
 
 - [Day1: Flutter Installation and First Step](#day1-flutter-installation-and-first-step)
-- [Day2: Git, Dart Types and Scaffold](#day2-git-dart-types-and-scaffold)
+- [Day2: Git, Data Types and Scaffold](#day2-git-data-types-and-scaffold)
 - [Day3: Functions, Classes, Routes, Theme & Text](#day3-functions-classes-routes-theme--text)
+- [Day4: Adding images, Google fonts, ElevatedButton, Login](#day4-adding-images-google-fonts-elevatedbutton-login)
+- [Day5: Publish to Github, SingleChildScrollView, Navigator](#day5-publish-to-github-singlechildscrollview-navigator)
+- [Day6: Stateful, Animated Container, Future Delay](#day6-stateful-animated-container-future-delay)
 
 ## Day1: Flutter Installation and First Step
 
@@ -37,8 +40,13 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+```
 
+## Day2: Git, Data Types and Scaffold
 
+-------------DATA TYPES-----------
+
+```dart
 // Data Types
 int days = 30;
 double salary = 3.566;
@@ -74,6 +82,44 @@ final time = '10:45 AM';
 time = '10:55 PM'; // Can't assign value more than once
 ```
 
-## Day2: Git, Dart Types and Scaffold
+-----------SCAFFOLD-------------
+
+```dart
+//  Scaffold
+
+Widget build(BuildContext context) {
+  /*scaffold Implements the basic Material Design
+  visual layout structure.*/
+   return Scaffold(
+    //  AppBar placed at the top of an app.
+     appBar: AppBar(
+       title: const Text("Catalog App"),
+     ),
+     /*body displays the main or primary content in the Scaffold ,displayed below the appBar,above the bottom */
+     body: Center(
+       child: Container(
+         child: Text("I am learning $days flutter by $name //+name"),
+       ),
+     ),
+     /* Drawer is for footer and displayed
+     to the left of the body */
+     drawer: const Drawer(),
+   );
+ }
+```
 
 ## Day3: Functions, Classes, Routes, Theme & Text
+
+## Day4: Adding images, Google fonts, ElevatedButton, Login
+
+## Day5: Publish to Github, SingleChildScrollView, Navigator
+
+## Day6: Stateful, Animated Container, Future Delay
+
+## Day7:
+
+## Day8:
+
+## Day9:
+
+## Day10:
