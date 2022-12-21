@@ -17,6 +17,7 @@ import 'package:flutter/material.dart';
 
 // Starting point of our app
 // everything starts from main function
+///MaterialApp
 /// runApp will run the given widget [MyApp]
 /// [MyApp] should have [MaterialApp] on build
 void main() {
@@ -109,6 +110,32 @@ Widget build(BuildContext context) {
 ```
 
 ## Day3: Functions, Classes, Routes, Theme & Text
+
+----------Function & Method--------
+
+```dart
+
+Widget build(BuildContext context) {
+    return MaterialApp(
+       //home: HomePage(),
+
+          ------Theme-------
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primarySwatch: Colors.red),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+
+      ---------routes-------
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => const HomePage(),
+        "/homepage": (context) => const LoginPage(),
+        "/login": (context) => const LoginPage(),
+      },
+    );
+  }
+```
 
 ## Day4: Adding images, Google fonts, ElevatedButton, Login
 
