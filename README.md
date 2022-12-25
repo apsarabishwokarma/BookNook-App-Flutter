@@ -113,29 +113,35 @@ Widget build(BuildContext context) {
 
 ----------Function & Method--------
 
-```dart
 
+```dart
+///[BuildContext] contains information about the location in the tree at which this widget is being built.
 Widget build(BuildContext context) {
     return MaterialApp(
        //home: HomePage(),
 
           ------Theme-------
+      //ThemeData 
       themeMode: ThemeMode.light,
       theme: ThemeData(primarySwatch: Colors.red),
+      //properties of dark theme
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-
+      /// a Page or Screen is called a Route.
+      routes 
       ---------routes-------
       initialRoute: "/home",
       routes: {
         "/": (context) => const HomePage(),
+        /*"/" refers default route */
         "/homepage": (context) => const LoginPage(),
         "/login": (context) => const LoginPage(),
       },
     );
   }
 ```
+
 
 ## Day4: Adding images, Google fonts, ElevatedButton, Login
 
