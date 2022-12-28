@@ -44,7 +44,8 @@ class LoginPage extends StatelessWidget {
                     height: 20.0,
                   ),
                   ElevatedButton(
-                    style: TextButton.styleFrom(),
+                    style:
+                        ElevatedButton.styleFrom(backgroundColor: Colors.green),
 
                     // onPressed: ()
                     // this can take multiple statements

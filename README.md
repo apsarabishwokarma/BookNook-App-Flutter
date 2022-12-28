@@ -166,23 +166,29 @@ class LoginPage extends StatelessWidget {
 
 ## Day4: Adding images, Google fonts, ElevatedButton, Login
 
----------------- for images---------
-
 for images: 
 [undraw](https://undraw.co/illustrations)
 
 for importing external packages:
 [pubdev](https://pub.dev/)
+
+
 ```dart
+
+---------------- for images---------
+   Image.asset("assets/images/login.png")
+   
 //creating image folder inside assets folder and place all the images inside this
 // uncomment the assets inside pubspec.yaml and mention - assets/images/
 //child and children 
-//pub.dev for instruction for importing different packages and plugin like google fonts in
-//plugins and packages
+//pub.dev for instruction for importing different packages and plugin like google fonts.
+/*plugins and packages
 A "package" contains only Dart code.
-A "plugin" contains both Dart and Native code (kotlin/js/swift/...)
+A "plugin" contains both Dart and Native code (kotlin/js/swift/...)*/
+
 
 ----------form------------
+```
 
 ## Day5: Publish to Github, SingleChildScrollView, Navigator
 

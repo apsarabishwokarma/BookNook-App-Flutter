@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: ThemeData(
-          primarySwatch: Colors.red,
-          primaryTextTheme: GoogleFonts.latoTextTheme()),
+          primarySwatch: Colors.purple,
+          primaryTextTheme: GoogleFonts.,)
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
