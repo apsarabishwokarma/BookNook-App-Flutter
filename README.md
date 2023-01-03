@@ -284,8 +284,9 @@ class StaticLabel extends StatelessWidget {
   }
 }
 
-//This is a stateless widget that displays a static label. The text to display is passed in as a constructor argument and is stored in the text field.
-Since the text field is not mutable, this widget is stateless.
+//This is a stateless widget that displays a static label. 
+The text to display is passed in as a constructor argumentand is stored
+in the text field.Since the text field is not mutable, this widget is stateless.
 
 ```
 
