@@ -113,7 +113,6 @@ Widget build(BuildContext context) {
 
 ----------Function & Method--------
 
-
 ```dart
 ///[BuildContext] contains information about the location in the tree at which this widget is being built.
 Widget build(BuildContext context) {
@@ -121,7 +120,7 @@ Widget build(BuildContext context) {
        //home: HomePage(),
 
           ------Theme-------
-      //ThemeData 
+      //ThemeData
       themeMode: ThemeMode.light,
       theme: ThemeData(primarySwatch: Colors.red),
       //properties of dark theme
@@ -129,7 +128,7 @@ Widget build(BuildContext context) {
         brightness: Brightness.dark,
       ),
       /// a Page or Screen is called a Route.
-      routes 
+      routes
       ---------routes-------
       initialRoute: "/home",
       routes: {
@@ -141,7 +140,9 @@ Widget build(BuildContext context) {
     );
   }
 ```
+
 ----------------Material------
+
 ```dart
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -166,21 +167,20 @@ class LoginPage extends StatelessWidget {
 
 ## Day4: Adding images, Google fonts, ElevatedButton, Login
 
-for images: 
+for images:
 [undraw](https://undraw.co/illustrations)
 
 for importing external packages:
 [pubdev](https://pub.dev/)
 
-
 ```dart
 
 ---------------- for images---------
    Image.asset("assets/images/login.png")
-   
+
 //creating image folder inside assets folder and place all the images inside this
 // uncomment the assets inside pubspec.yaml and mention - assets/images/
-//child and children 
+//child and children
 //pub.dev for instruction for importing different packages and plugin like google fonts.
 /*plugins and packages
 A "package" contains only Dart code.
@@ -192,7 +192,97 @@ A "plugin" contains both Dart and Native code (kotlin/js/swift/...)*/
 
 ## Day5: Publish to Github, SingleChildScrollView, Navigator
 
+```dart
+`SingleChildScrollView`is a widget in Flutter that allows you to scroll a single child widget within it.
+
+Here is an example of using SingleChildScrollView:
+
+SingleChildScrollView(
+  child: Column(
+    children: [
+      Text('This is a long text that will not fit on the screen.'),
+      Text('This is a long text that will not fit on the screen.'),
+
+    ],
+  ),
+)
+
+//In this example, the SingleChildScrollView widget contains a Column with several text widgets. If the text is too long to fit on the screen, the SingleChildScrollView allows the user to scroll the text up and down.
+```
+
 ## Day6: Stateful, Animated Container, Future Delay
+
+```dart
+//![alt text](http://url/to/img.png)
+
+
+In Flutter, widgets are either stateful or stateless.
+
+
+---Stateful Widget
+1.A stateful widget is a widget that has a mutable state.
+This means that the widget can change its state over time.
+
+An example of a stateful widget is a checkbox that can be checked and unchecked.
+ -------Example of stateful widget:
+
+class CounterWidget extends StatefulWidget {
+  @override
+  _CounterWidgetState createState() => _CounterWidgetState();
+}
+
+class _CounterWidgetState extends State<CounterWidget> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: <Widget>[
+        Text('Count: $_counter'),
+        RaisedButton(
+          onPressed: _incrementCounter,
+          child: Text('Increment'),
+        ),
+      ],
+    );
+  }
+}
+
+//This is a stateful widget that displays a count and has a button that can be pressed to increment the count. The count is stored in the _counter field, which is a mutable state of the widget. When the button is pressed, the _incrementCounter method is called, which increments the _counter field and calls setState to notify the framework that the state has changed.
+
+
+---Stateless Widget
+A stateless widget is a widget that does not have mutable state.
+This means that the widget does not change its state over time.
+
+An example of a stateless widget is a static text label.
+
+
+
+
+
+------Example of a stateless widget
+
+class StaticLabel extends StatelessWidget {
+  final String text;
+
+  const StaticLabel(this.text);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(text);
+  }
+}
+
+//This is a stateless widget that displays a static label. The text to display is passed in as a constructor argument and is stored in the text field. Since the text field is not mutable, this widget is stateless.
+
+```
 
 ## Day7:
 
