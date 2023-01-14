@@ -207,7 +207,8 @@ SingleChildScrollView(
   ),
 )
 
-//In this example, the SingleChildScrollView widget contains a Column with several text widgets. If the text is too long to fit on the screen, the SingleChildScrollView allows the user to scroll the text up and down.
+//In this example, the SingleChildScrollView widget contains a Column with several text widgets.
+If the text is too long to fit on the screen, the SingleChildScrollView allows the user to scroll the text up and down.
 ```
 
 ## Day6: Stateful, Animated Container, Future Delay
@@ -220,7 +221,7 @@ In Flutter, widgets are either stateful or stateless.
 
 
 ---Stateful Widget
-1.A stateful widget is a widget that has a mutable state.
+A stateful widget is a widget that has a mutable state.
 This means that the widget can change its state over time.
 
 An example of a stateful widget is a checkbox that can be checked and unchecked.
@@ -254,7 +255,10 @@ class _CounterWidgetState extends State<CounterWidget> {
   }
 }
 
-//This is a stateful widget that displays a count and has a button that can be pressed to increment the count. The count is stored in the _counter field, which is a mutable state of the widget. When the button is pressed, the _incrementCounter method is called, which increments the _counter field and calls setState to notify the framework that the state has changed.
+//This is a stateful widget that displays a count and has a button that can be pressed to increment the count.
+The count is stored in the _counter field, which is a mutable state of the widget. When the button is pressed,
+the _incrementCounter method is called, which increments the _counter field 
+and calls setState to notify the framework that the state has changed.
 
 
 ---Stateless Widget
@@ -280,7 +284,9 @@ class StaticLabel extends StatelessWidget {
   }
 }
 
-//This is a stateless widget that displays a static label. The text to display is passed in as a constructor argument and is stored in the text field. Since the text field is not mutable, this widget is stateless.
+//This is a stateless widget that displays a static label. 
+The text to display is passed in as a constructor argumentand is stored
+in the text field.Since the text field is not mutable, this widget is stateless.
 
 
 
