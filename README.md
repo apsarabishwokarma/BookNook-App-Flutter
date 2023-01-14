@@ -282,6 +282,14 @@ class StaticLabel extends StatelessWidget {
 
 //This is a stateless widget that displays a static label. The text to display is passed in as a constructor argument and is stored in the text field. Since the text field is not mutable, this widget is stateless.
 
+
+
+
+await Future.delayed(const Duration(seconds: 1));
+
+<!-- This line of code is using the Future.delayed method to pause execution of the code for a specific amount of time, in this case 1 second.
+The await keyword is used to wait for the completion of the Future before continuing with the rest of the code. It is commonly used in asyncronous programming to prevent a function from running ahead before the completion of certain task. This can be useful in situations where you need to wait for an external event to occur or for a response from a network request. -->
+
 ```
 
 ## Day7:
