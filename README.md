@@ -8,8 +8,7 @@
 - [Day4: Adding images, Google fonts, ElevatedButton, Login](#day4-adding-images-google-fonts-elevatedbutton-login)
 - [Day5: Publish to Github, SingleChildScrollView, Navigator](#day5-publish-to-github-singlechildscrollview-navigator)
 - [Day6: Stateful, Animated Container, Future Delay](#day6-stateful-animated-container-future-delay)
-- [Day8:Form ,TextField Validation ,Ink](#day8form-textfield-validation-ink)
-
+- [Day8: Form ,TextField Validation ,Ink](#day8form-textfield-validation-ink)
 
 ## Day1: Flutter Installation and First Step
 
@@ -259,7 +258,7 @@ class _CounterWidgetState extends State<CounterWidget> {
 
 //This is a stateful widget that displays a count and has a button that can be pressed to increment the count.
 The count is stored in the _counter field, which is a mutable state of the widget. When the button is pressed,
-the _incrementCounter method is called, which increments the _counter field 
+the _incrementCounter method is called, which increments the _counter field
 and calls setState to notify the framework that the state has changed.
 
 
@@ -286,7 +285,7 @@ class StaticLabel extends StatelessWidget {
   }
 }
 
-//This is a stateless widget that displays a static label. 
+//This is a stateless widget that displays a static label.
 The text to display is passed in as a constructor argumentand is stored
 in the text field.Since the text field is not mutable, this widget is stateless.
 
@@ -302,7 +301,7 @@ The await keyword is used to wait for the completion of the Future before contin
 
 ## Day7:
 
-## Day8:Form ,TextField Validation ,Ink 
+## Day8:Form ,TextField Validation ,Ink
 
 ## Day9:
 
