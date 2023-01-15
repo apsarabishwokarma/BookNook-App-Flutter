@@ -303,6 +303,34 @@ The await keyword is used to wait for the completion of the Future before contin
 
 ## Day8:Form ,TextField Validation ,Ink
 
-## Day9:
+```dart
+// ? why error
+validator: (value) {
+   if (value.isEmpty) {
+       return "Username cannot be empty";
+       }
+
+    return null;
+    },
+
+    //Answer:
+//The code you provided checks if a given value is empty, but if the value passed to the function is null,
+//it will cause a null reference exception when trying to access the .isEmpty property.
+
+validator: (value) {
+    if (value == null || value.isEmpty) {
+        return "Username cannot be empty";
+    }
+    return null;
+},
+
+//This will check if the value is null before trying to access the isEmpty property,
+ and return an error message if it is.
+
+
+
+
+## Day9:Material Drawer, DevTools, ListView ,NetworkImage 
 
 ## Day10:
+```

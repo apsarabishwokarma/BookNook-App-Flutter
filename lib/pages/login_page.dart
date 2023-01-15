@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learning/pages/utils/routes.dart';
+import 'package:flutter_learning/utils/routes.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -14,11 +14,11 @@ class _LoginPageState extends State<LoginPage> {
   String name = "";
 
   bool changeButton = false;
-
   final _formKey = GlobalKey<FormState>(); //to use form
 //method
   moveToHome(BuildContext context) async {
-    if (_formKey.currentState.validate()) {
+    if (_formKey.currentState!.validate()) {
+      // ! means currentState will never be null
       setState(() {
         changeButton = true;
       });
@@ -64,13 +64,24 @@ class _LoginPageState extends State<LoginPage> {
                       TextFormField(
                         decoration: const InputDecoration(
                             hintText: "Enter Username", labelText: "Username"),
+                        // validator: (value) {
+                        //   value = value ??
+                        //       ""; // value ??= ""; or value = value == null ? "" : value;
+                        //   if (value.isEmpty) {
+                        //     return "Username cannot be empty";
+                        //   }
+
+                        //   return null;
+                        // },
+
+                        //or
                         validator: (value) {
-                          if (value.isEmpty) {
+                          if (value == null || value.isEmpty) {
                             return "Username cannot be empty";
                           }
-
                           return null;
                         },
+
                         onChanged: (value) {
                           name = value;
                           setState(() {
@@ -84,6 +95,8 @@ class _LoginPageState extends State<LoginPage> {
                             hintText: "Enter password", labelText: "Password"),
 
                         validator: (value) {
+                          value = value ??
+                              ""; // value ??= ""; or value = value == null ? "" : value;
                           if (value.isEmpty) {
                             return "Password cannot be empty";
                           } else if (value.length < 6) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learning/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -16,7 +17,7 @@ class HomePage extends StatelessWidget {
           child: Text("I am learning $days flutter by $name"), //or +name
         ),
       ),
-      drawer: const Drawer(), //vertical panel
+      drawer: const MyDrawer(), //vertical panel
     );
   }
 }
