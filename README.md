@@ -330,7 +330,7 @@ validator: (value) {
 
 
 
-## Day9:Material Drawer, DevTools, ListView ,NetworkImage 
-
+## Day9:Material Drawer, DevTools, ListView ,NetworkImage
+ctrl+shift+p and search devtool and open in browser
 ## Day10:
 ```
