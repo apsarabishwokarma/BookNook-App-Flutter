@@ -9,6 +9,10 @@
 - [Day5: Publish to Github, SingleChildScrollView, Navigator](#day5-publish-to-github-singlechildscrollview-navigator)
 - [Day6: Stateful, Animated Container, Future Delay](#day6-stateful-animated-container-future-delay)
 - [Day8: Form ,TextField Validation ,Ink](#day8form-textfield-validation-ink)
+- [Day9:Material Drawer, DevTools, ListView ,NetworkImage](#day9material-drawer-devtools-listview-networkimage)
+- [Day10: Models ,AppBarTheme , Extracting Theme](#day10-models-appbartheme--extracting-theme)
+- [Day 11 : BuildContext, 3 Trees & Constraints Explained](#day-11--buildcontext-3-trees--constraints-explained)
+- [link](#day-12)
 
 ## Day1: Flutter Installation and First Step
 
@@ -328,11 +332,42 @@ validator: (value) {
  and return an error message if it is.
 
 
-
+```
 
 ## Day9:Material Drawer, DevTools, ListView ,NetworkImage
+
 ctrl+shift+p and search devtool and open in browser
 
+```dart
+
+
+const imageUrl =
+        "https://64.media.tumblr.com/8dc15fdf0f4d8deeb4e5c68e8d2e77c7/653c788e81d33b77-98/s540x810/291f773be1c90441aab6bc0ab7d2e74a93edca71.jpg";
+        ----------
+child: UserAccountsDrawerHeader(
+              accountName: Text(
+                "Apsara Bishwokarma",
+                style: TextStyle(color: Colors.white),
+              ),
+              accountEmail: Text(
+                "apsarabk94@gmail.com",
+                style: TextStyle(color: Colors.white),
+              ),
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: NetworkImage(imageUrl),//NetworkImage
+              ),
+            ),
+          ),
+```
 
 ## Day10: Models ,AppBarTheme , Extracting Theme
+
+## Day 11 : BuildContext, 3 Trees & Constraints Explained
+
+## Day 12 :
+
+## Day 13:
+
+```
+
 ```
