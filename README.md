@@ -365,9 +365,9 @@ child: UserAccountsDrawerHeader(
 
 
 
-## Day 11 : BuildContext, 3 Trees & Constraints Explained
+## Day 11 : 
 
-## Day 12 :
+## Day 12 : ListView Builder, List Generate, Card & Asserts
 
 ## Day 13:
 

@@ -17,11 +17,15 @@ class HomePage extends StatelessWidget {
         //horizontal bar
         title: const Text("Catalog App"),
       ),
-      body: Center(
-        child: Container(
-          child: Text("I am learning $days flutter by $name"), //or +name
-        ),
-      ),
+      // body: ListView.builder(itemCount:CatalogModel.items.length,
+      // itemBuilder:(context, index) {
+
+      //   },),
+      // Center(
+      //   child: Container(
+      //     child: Text("I am learning $days flutter by $name"), //or +name
+      //   ),
+      // ),
       drawer: const MyDrawer(), //vertical panel
     );
   }
