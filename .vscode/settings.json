@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["pubdev", "pubspec"]
+  "cSpell.words": ["pubdev", "pubspec"],
+  "cmake.configureOnOpen": false
 }
