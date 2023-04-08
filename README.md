@@ -374,6 +374,12 @@ child: UserAccountsDrawerHeader(
 
 ## Day 17:Beautiful UI | Vx
 
+## Day 18: JSON Mapping | Data Class Generator | ProgressIndicator
+
+## Day 19: GridView | GridTile
+
+## Day 20:Beautiful UI | Vx
+
 ```
 
 ```
