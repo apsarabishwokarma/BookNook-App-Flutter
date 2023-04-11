@@ -369,6 +369,26 @@ child: UserAccountsDrawerHeader(
 
 ## Day 13:Local Files | Load & Decode JSON
 
+## Day 15: JSON Mapping | Data Class Generator | ProgressIndicator
+
+## Day 16: GridView | GridTile
+
+## Day 17:Beautiful UI | Vx
+
+## Day 18: JSON Mapping | Data Class Generator | ProgressIndicator
+
+## Day 19: GridView | GridTile
+
+## Day 20:Beautiful UI | Vx
+
 ```
 
 ```
+
+## Day10:
+
+## Day11:
+
+## Day12
+
+## Day13:
