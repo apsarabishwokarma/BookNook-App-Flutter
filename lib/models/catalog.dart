@@ -136,3 +136,15 @@ class Item {
   Item({this.id, this.bookName, this.desc, this.price, this.color, this.image}) // named constructor
    */
 }
+
+  // factory Item.fromJson(Map<String, dynamic> json){
+  //   return Item(
+  //     id: json['id'],
+  //     bookName: json['bookName'],
+  //     desc: json['desc'],
+  //     price: json['price'],
+  //     color: json['color'],
+  //     image: json['image'],
+  //   );
+  // }
+
