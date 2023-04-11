@@ -12,7 +12,7 @@ class ItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 0.0,
+      // elevation: 1,
       child: ListTile(
         leading: Image.network(
           item.image,

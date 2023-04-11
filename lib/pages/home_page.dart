@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget {
         //   textTheme: Theme.of(context).textTheme),
         //horizontal bar
         title: const Text("Catalog App"),
+        centerTitle: true,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

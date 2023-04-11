@@ -357,7 +357,7 @@ child: UserAccountsDrawerHeader(
                 backgroundImage: NetworkImage(imageUrl),//NetworkImage
               ),
             ),
-          ),
+
 ```
 
 ## Day10: Models ,AppBarTheme , Extracting Theme
