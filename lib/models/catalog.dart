@@ -135,4 +135,30 @@ class Item {
 
   Item({this.id, this.bookName, this.desc, this.price, this.color, this.image}) // named constructor
    */
+
+//------mwthod for decoding---
+  factory Item.fromMap(Map<String, dynamic> map) {
+    //if (map == null) return null;
+
+    return Item(
+      id: map['id'],
+      bookName: map['name'],
+      desc: map['desc'],
+      price: map['price'],
+      color: map['color'],
+      image: map['image'],
+    );
+  }
+
+//---------for encoding----
+  toMap() {
+    return {
+      'id': id,
+      'bookName': bookName,
+      'desc': desc,
+      'price': price,
+      'color': color,
+      'image': image,
+    };
+  }
 }
