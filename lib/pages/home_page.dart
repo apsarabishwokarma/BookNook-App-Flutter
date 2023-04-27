@@ -16,6 +16,32 @@ class _HomePageState extends State<HomePage> {
   final int days = 30;
 
   final String name = "codepur";
+
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   loadData();
+  // }
+
+  // loadData() async {
+  //   final catalogjson =
+  //       await rootBundle.loadString("assets/files/catalog.json");
+  //   //print(catalogjson);
+  //   final decodedData = jsonDecode(catalogjson); //from string to other format
+  //   //print(decodeData);
+  //   //var encodedata = jsonEncode(object);//from other to string
+  //   var productsData = decodedData["products"];
+  //   // List<Item> list = List.from(productsData)
+  //   //     .map<Item>((item) => Item.fromMap(item))
+  //   //     .toList();
+  //   //This line of code creates a new list with the same length as productsData and fills it with null values.
+  //   CatalogModel.items = List.from(productsData)
+  //       .map<Item>((item) => Item.fromMap(item))
+  //       .toList();
+  //   setState(() {});
+
+  //   //print(produtsData);
+  // }
   @override
   void initState() {
     super.initState();
@@ -23,14 +49,15 @@ class _HomePageState extends State<HomePage> {
   }
 
   loadData() async {
-    final catalogjson =
+    await Future.delayed(const Duration(seconds: 2));
+    final catalogJson =
         await rootBundle.loadString("assets/files/catalog.json");
-    //print(catalogjson);
-    final decodedData = jsonDecode(catalogjson); //from string to other format
-    //print(decodeData);
-    //var encodedata = jsonEncode(object);//from other to string
-    var produtsData = decodedData["products"];
-    print(produtsData);
+    final decodedData = jsonDecode(catalogJson);
+    var productsData = decodedData["products"];
+    CatalogModel.items = List.from(productsData)
+        .map<Item>((item) => Item.fromMap(item))
+        .toList();
+    setState(() {});
   }
 
   @override
