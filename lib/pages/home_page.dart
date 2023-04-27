@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
     final catalogJson =
         await rootBundle.loadString("assets/files/catalog.json");
     final decodedData = jsonDecode(catalogJson);
-    var productsData = decodedData["products"];
+    var productsData = decodedData["Products"];
     CatalogModel.items = List.from(productsData)
         .map<Item>((item) => Item.fromMap(item))
         .toList();
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               )
             : const Center(
-                child: CircularProgressIndicator(),  //else 
+                child: CircularProgressIndicator(), //else
               ),
       ),
       drawer: const MyDrawer(),

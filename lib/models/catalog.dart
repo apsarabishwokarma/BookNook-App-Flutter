@@ -30,12 +30,12 @@ class Item {
     required String image,
   }) {
     return Item(
-      id: id,
-      bookName: bookName,
-      desc: desc,
-      price: price,
-      color: color,
-      image: image,
+      id: id ?? this.id,
+      bookName: bookName ?? this.bookName,
+      desc: desc ?? this.desc,
+      price: price ?? this.price,
+      color: color ?? this.color,
+      image: image ?? this.image,
     );
   }
 
@@ -51,7 +51,7 @@ class Item {
   }
 
   factory Item.fromMap(Map<String, dynamic> map) {
-    // if (map == null) return null;
+    //if (map == null) return null;
 
     return Item(
       id: map['id'],
