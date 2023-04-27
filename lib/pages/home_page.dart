@@ -1,6 +1,8 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'dart:convert';
 import 'package:flutter_learning/models/catalog.dart';
 import 'package:flutter_learning/widgets/drawer.dart';
 import 'package:flutter_learning/widgets/item_widgets.dart';
