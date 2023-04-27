@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_learning/models/catalog.dart';
 import 'package:flutter_learning/widgets/drawer.dart';
-import 'package:flutter_learning/widgets/item_widgets.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -47,12 +46,61 @@ class _HomePageState extends State<HomePage> {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: (CatalogModel.items.isNotEmpty) //if
-            ? ListView.builder(
-                itemCount: CatalogModel.items.length,
-                itemBuilder: (context, index) => ItemWidget(
-                  item: CatalogModel.items[index],
+            ?
+            //-----------------For Grid View -------------------
+            GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 15,
+                  crossAxisSpacing: 15,
                 ),
+                itemBuilder: (context, index) {
+                  final item = CatalogModel.items[index];
+                  return Card(
+                    //color: Colors.black,
+                    clipBehavior: Clip.antiAlias,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: GridTile(
+                      header: Container(
+                        padding: const EdgeInsets.all(12),
+                        decoration: const BoxDecoration(
+                          color: Colors.deepPurple,
+                        ),
+                        child: Text(
+                          item.bookName,
+                          style: const TextStyle(color: Colors.white),
+                        ),
+                      ),
+                      footer: Container(
+                        padding: const EdgeInsets.all(12),
+                        decoration: const BoxDecoration(
+                          color: Colors.black,
+                        ),
+                        child: Text(
+                          item.price.toString(),
+                          style: const TextStyle(color: Colors.white),
+                        ),
+                      ),
+                      child: Image.network(
+                        item.image,
+                        // height: 50,
+                        // fit: BoxFit.contain,
+                      ),
+                    ),
+                  );
+                },
+                itemCount: CatalogModel.items.length,
               )
+
+            //------------For List View ---------
+            // ListView.builder(
+            //     itemCount: CatalogModel.items.length,
+            //     itemBuilder: (context, index) => ItemWidget(
+            //       item: CatalogModel.items[index],
+            //     ),
+            //   )
             : const Center(
                 child: CircularProgressIndicator(), //else
               ),
