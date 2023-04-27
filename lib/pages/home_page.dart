@@ -29,7 +29,9 @@ class _HomePageState extends State<HomePage> {
     final catalogJson =
         await rootBundle.loadString("assets/files/catalog.json");
     final decodedData = jsonDecode(catalogJson);
-    var productsData = decodedData["Products"];
+    //print(decodedData);
+    var productsData = decodedData["products"];
+    //print(productsData);
     CatalogModel.items = List.from(productsData)
         .map<Item>((item) => Item.fromMap(item))
         .toList();
