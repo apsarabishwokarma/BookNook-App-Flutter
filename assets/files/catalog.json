@@ -2,8 +2,8 @@
   "books": [
     {
       "id": 1,
-      "bookName": "Fault In Our Stars",
-      "desc": "Mostly sailing book",
+      "bookName": "Our Stars",
+      "desc": "Heart-warming story of two teenagers who fall in love while battling cancer",
       "price": 999,
       "color": "black",
       "image": "https://upload.wikimedia.org/wikipedia/en/a/a9/The_Fault_in_Our_Stars.jpg"
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "bookName": "It Ends With Us",
-      "desc": "Mostly sailing book",
+      "desc": " novel about love, abuse, and the choices we make that define us.",
       "price": 999,
       "color": "black",
       "image": "https://4.bp.blogspot.com/-CDuBRNrcv9g/WBo-FKvDWoI/AAAAAAAADeI/cLa5i9qwmbQsMOM5GRrdY1LnqX0ieWCFwCLcB/s1600/it-ends-with-us.jpg"
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "bookName": "It Starts With Us",
-      "desc": "Mostly sailing book",
+      "desc": "A moving and thought-provoking novel about family, forgiveness",
       "price": 999,
       "color": "black",
       "image": "https://tse3.mm.bing.net/th?id=OIP.XkiKLh_NoyfxNfLmcrqBXAHaLg&pid=Api&P=0"
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "bookName": "The Spy",
-      "desc": "Mostly sailing book",
+      "desc": "suspenseful thriller about a former CIA agent who is forced back into the game to stop a deadly terrorist plot.",
       "price": 999,
       "color": "black",
       "image": "https://tse4.mm.bing.net/th?id=OIP.2BQvOG9kwfjH-rLqpmz5ZgHaHa&pid=Api&P=0"
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "bookName": "Ugly Love",
-      "desc": "Mostly sailing book",
+      "desc": "A poignant and deeply emotional novel about the complexities of love and the scars that it can leave behind.",
       "price": 999,
       "color": "black",
       "image": "https://tse1.mm.bing.net/th?id=OIP.DMGDucyD5VD5OyI3G9kL5QAAAA&pid=Api&P=0"
@@ -43,11 +43,12 @@
     {
       "id": 6,
       "bookName": "The Fault In Our Stars",
-      "desc": "Mostly sailing book",
+      "desc": "An unforgettable tale of love, loss, and the beauty of life that will stay with you long after you've turned the last page.",
       "price": 999,
       "color": "black",
       "image": "https://tse1.mm.bing.net/th?id=OIP.2BQvOG9kwfjH-rLqpmz5ZgHaHa&pid=Api&P=0"
     },
+
     {
       "id": 7,
       "bookName": "To Kill a Mockingbird",
@@ -92,6 +93,14 @@
       "id": 12,
       "bookName": "The hobbit",
       "desc": "Mostly sailing book",
+      "price": 999,
+      "color": "black",
+      "image": "https://source.unsplash.com/random/nature2"
+    },
+    {
+      "id": 13,
+      "bookName": "The love",
+      "desc": "A story about forgiveness, redemption, and the power of second chances.",
       "price": 999,
       "color": "black",
       "image": "https://source.unsplash.com/random/nature2"
