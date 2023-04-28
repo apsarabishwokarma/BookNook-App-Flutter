@@ -35,7 +35,7 @@
     {
       "id": 5,
       "bookName": "Ugly Love",
-      "desc": "A poignant and deeply emotional novel about the complexities of love and the scars that it can leave behind.",
+      "desc": "Deeply emotional novel about the complexities of love and the scars that it can leave behind.",
       "price": 999,
       "color": "black",
       "image": "https://tse1.mm.bing.net/th?id=OIP.DMGDucyD5VD5OyI3G9kL5QAAAA&pid=Api&P=0"
@@ -60,7 +60,7 @@
     {
       "id": 8,
       "bookName": "1984",
-      "desc": "A dystopian novel about a totalitarian government and the power of language",
+      "desc": "novel about a totalitarian government and the power of language",
       "price": 1499,
       "color": "red",
       "image": "https://source.unsplash.com/random/tree"
@@ -84,7 +84,7 @@
     {
       "id": 11,
       "bookName": "The Great Gatsby",
-      "desc": "A novel about the American Dream, love, and tragedy in the Roaring Twenties",
+      "desc": " novel about  Dream, love, and tragedy in the Roaring Twenties",
       "price": 1099,
       "color": "silver",
       "image": "https://source.unsplash.com/random/tree3"
