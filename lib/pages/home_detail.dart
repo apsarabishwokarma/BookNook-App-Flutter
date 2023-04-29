@@ -68,6 +68,7 @@ class HomeDetailPage extends StatelessWidget {
                     "Clita diam dolor consetetur takimata et. prebum erat, lorem dolores voluptua dolor elitr. Magna sea et aliquyam."
                         .text
                         .textStyle(context.captionStyle)
+                        .color(context.accentColor)
                         .make()
                         .p12()
                   ],
