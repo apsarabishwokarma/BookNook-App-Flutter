@@ -55,7 +55,7 @@ class HomeDetailPage extends StatelessWidget {
                 width: context.screenWidth,
                 child: Column(
                   children: [
-                    catalog.bookName.text.xl3
+                    catalog.bookName.text.xl4
                         .color(context.accentColor)
                         .bold
                         .make(),
@@ -63,8 +63,9 @@ class HomeDetailPage extends StatelessWidget {
                         .textStyle(context.captionStyle)
                         .xl
                         .color(context.accentColor)
-                        .make(),
-                    10.heightBox,
+                        .make()
+                        .px16(),
+                    //10.heightBox,
                     "Clita diam dolor consetetur takimata et. prebum erat, lorem dolores voluptua dolor elitr. Magna sea et aliquyam."
                         .text
                         .textStyle(context.captionStyle)
