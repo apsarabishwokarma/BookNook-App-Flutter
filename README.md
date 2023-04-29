@@ -380,6 +380,8 @@ child: UserAccountsDrawerHeader(
 
 ## Day 20:Themes | Dark Theme | System Themes
 
+## Day 21: Catalog Model Fix | AppBar Fix
+
 ```
 
 ```
