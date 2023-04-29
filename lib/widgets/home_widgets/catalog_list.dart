@@ -3,7 +3,6 @@ import 'package:flutter_learning/pages/home_detail.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import '../../models/catalog.dart';
-import '../theme.dart';
 import 'catalog_image.dart';
 
 class CatalogList extends StatelessWidget {
@@ -59,22 +58,27 @@ class CatalogItem extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              catalog.bookName.text.lg
-                  .color(MyTheme.darkBluishColor)
-                  .bold
+              catalog.bookName.text.lg.color(context.accentColor).bold.make(),
+              catalog.desc.text
+                  .textStyle(context.captionStyle)
+                  .color(context.accentColor)
                   .make(),
-              catalog.desc.text.textStyle(context.captionStyle).make(),
               10.heightBox,
               ButtonBar(
                 alignment: MainAxisAlignment.spaceBetween,
                 buttonPadding: EdgeInsets.zero,
                 children: [
-                  "\$${catalog.price}".text.bold.xl.make(),
+                  "\$${catalog.price}"
+                      .text
+                      .bold
+                      .color(context.accentColor)
+                      .xl
+                      .make(),
                   ElevatedButton(
                     onPressed: () {},
                     style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(
-                          MyTheme.darkBluishColor,
+                          context.theme.buttonColor,
                         ),
                         shape: MaterialStateProperty.all(
                           const StadiumBorder(),
@@ -87,6 +91,6 @@ class CatalogItem extends StatelessWidget {
           ))
         ],
       ),
-    ).white.rounded.square(150).make().py16();
+    ).color(context.cardColor).rounded.square(150).make().py16();
   }
 }
