@@ -2,7 +2,7 @@
   "books": [
     {
       "id": 1,
-      "bookName": "Our Stars",
+      "bookName": "The fault in Our Stars",
       "desc": "Heart-warming story of two teenagers who fall in love while battling cancer",
       "price": 999,
       "color": "black",
@@ -42,7 +42,7 @@
     },
     {
       "id": 6,
-      "bookName": "The Fault In Our Stars",
+      "bookName": "Our Stars",
       "desc": "An unforgettable tale of love, loss, and the beauty of life that will stay with you long after you've turned the last page.",
       "price": 999,
       "color": "black",
