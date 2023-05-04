@@ -5,6 +5,7 @@ import 'package:velocity_x/velocity_x.dart';
 class MyTheme {
   static ThemeData lightTheme(BuildContext context) => ThemeData(
         primarySwatch: Colors.deepPurple,
+        //brightness: Brightness.light,
         fontFamily: GoogleFonts.poppins().fontFamily,
         cardColor: Colors.white,
         canvasColor: creamColor,
@@ -22,8 +23,10 @@ class MyTheme {
         //   foregroundColor: Colors.indigo,
         // ),
         //primarySwatch: Colors.white10,
-        colorScheme:
-            Theme.of(context).colorScheme.copyWith(secondary: Colors.black),
+        colorScheme: Theme.of(context).colorScheme.copyWith(
+              secondary: Colors.black,
+              brightness: Brightness.light,
+            ),
       );
 
   static ThemeData darkTheme(BuildContext context) => ThemeData(
@@ -47,8 +50,10 @@ class MyTheme {
         //   foregroundColor: Colors.indigo,
         // ),
         primarySwatch: Colors.indigo,
-        colorScheme:
-            Theme.of(context).colorScheme.copyWith(secondary: Colors.white),
+        colorScheme: Theme.of(context).colorScheme.copyWith(
+              secondary: Colors.white,
+              brightness: Brightness.dark,
+            ),
       );
 
   // useful Colors

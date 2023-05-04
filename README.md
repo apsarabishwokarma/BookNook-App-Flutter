@@ -401,6 +401,8 @@ child: UserAccountsDrawerHeader(
 
 ## Day 21: Catalog Model Fix | AppBar Fix
 
+## Day 22 - Placeholder | Cart Page
+
 ```
 
 ```
