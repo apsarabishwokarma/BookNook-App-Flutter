@@ -2,6 +2,10 @@ import 'dart:convert';
 import 'package:collection/collection.dart';
 
 class CatalogModel {
+  static final catModel = CatalogModel._internal(); //singleton class
+  CatalogModel._internal();
+  factory CatalogModel() => catModel;
+
   static List<Item> items = [];
 
   //Get Item By Id
@@ -29,6 +33,8 @@ class Item {
     required this.color,
     required this.image,
   });
+
+  get name => null;
 
   Item copyWith({
     required int id,

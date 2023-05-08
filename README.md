@@ -405,6 +405,8 @@ child: UserAccountsDrawerHeader(
 
 ## Day 23 - ScaffoldMessenger |Cart Model | List fold
 
+## Day 24 - Add To Cart Functionality
+
 ```
 
 ```
