@@ -45,7 +45,17 @@ class _cartTotal extends StatelessWidget {
                 backgroundColor:
                     MaterialStateProperty.all(context.theme.buttonColor),
               ),
-              onPressed: () {},
+              onPressed: () {
+                //scaffoldMessenger
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: "Buying not supported yet"
+                        .text
+                        .color(context.accentColor)
+                        .make(),
+                  ),
+                );
+              },
               child: "BUY".text.bold.white.xl3.make(),
             ).w32(context)
           ],
@@ -61,6 +71,7 @@ class _CartList extends StatefulWidget {
 }
 
 class _CartListState extends State<_CartList> {
+  // final _cart = CartModel();
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
