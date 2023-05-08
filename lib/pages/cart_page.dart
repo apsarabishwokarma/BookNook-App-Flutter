@@ -85,7 +85,8 @@ class _CartListState extends State<_CartList> {
           icon: const Icon(Icons.remove_circle),
           onPressed: () {},
         ),
-        title: _cart.items[index].name.text.make(),
+        title: _cart.items[index].bookName.text.make(),
+        //"item".text.make(),
       ),
     );
   }
