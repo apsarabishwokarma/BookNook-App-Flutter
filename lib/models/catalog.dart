@@ -36,6 +36,8 @@ class Item {
 
   get name => null;
 
+  Item? get item => null;
+
   Item copyWith({
     required int id,
     required String bookName,

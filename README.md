@@ -407,6 +407,8 @@ child: UserAccountsDrawerHeader(
 
 ## Day 24 - Add To Cart Functionality
 
+## Day 25 - Bad Code To The Rescue
+
 ```
 
 ```
