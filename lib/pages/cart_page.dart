@@ -44,13 +44,18 @@ class _cartTotal extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             // "\$${cart.totalPrice}".text.xl4.color(context.accentColor).make(),
-           VxConsumer(notifications: const {}, mutations: const {RemoveMutation},builder: (context,_,status)
-            {
-              //print("Rebuild Happened");
-              return "\$${cart.totalPrice}".text.xl5
-              .color(context.theme.colorScheme.secondary)
-              .make();
-            },),
+            VxConsumer(
+              notifications: const {},
+              mutations: const {RemoveMutation},
+              builder: (context, _, status) {
+                //print("Rebuild Happened");
+                return "\$${cart.totalPrice}"
+                    .text
+                    .xl5
+                    .color(context.theme.colorScheme.secondary)
+                    .make();
+              },
+            ),
             30.widthBox,
             ElevatedButton(
               style: ButtonStyle(
@@ -78,7 +83,7 @@ class _cartTotal extends StatelessWidget {
 class _CartList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    VxState.listen(context, to:[RemoveMutation]);
+    VxState.listen(context, to: [RemoveMutation]);
     final CartModel cart = (VxState.store as MyStore).cart;
     return cart.items.isEmpty
         ? "Nothing to show".text.xl3.makeCentered()
@@ -88,12 +93,10 @@ class _CartList extends StatelessWidget {
               leading: const Icon(Icons.done),
               trailing: IconButton(
                 icon: const Icon(Icons.remove_circle),
-                onPressed: () =>
-                  RemoveMutation(cart.items[index]),
-                  // setState(() {});
+                onPressed: () => RemoveMutation(cart.items[index]),
+                // setState(() {});
 
-                  //_cart.remove(_cart.items[index]);
-                ,
+                //_cart.remove(_cart.items[index]);
               ),
               title: cart.items[index].bookName.text.make(),
               //"item".text.make(),
