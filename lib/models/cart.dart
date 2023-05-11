@@ -2,9 +2,9 @@ import 'package:flutter_learning/models/catalog.dart';
 
 class CartModel {
   //catalog fields _ private
-  static final cartModel = CartModel._internal(); //singleton class
-  CartModel._internal();
-  factory CartModel() => cartModel;
+  // static final cartModel = CartModel._internal(); //singleton class
+  // CartModel._internal();
+  // factory CartModel() => cartModel;
 
   late CatalogModel _catalog;
   //CatalogModel _catalog = Catalog();

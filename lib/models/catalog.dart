@@ -2,9 +2,10 @@ import 'dart:convert';
 import 'package:collection/collection.dart';
 
 class CatalogModel {
-  static final catModel = CatalogModel._internal(); //singleton class
-  CatalogModel._internal();
-  factory CatalogModel() => catModel;
+  // static final catModel = CatalogModel._internal(); //singleton class
+  // CatalogModel._internal();
+
+  // factory CatalogModel() => catModel;
 
   static List<Item> items = [];
 
