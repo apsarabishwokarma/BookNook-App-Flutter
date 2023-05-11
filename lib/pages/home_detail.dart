@@ -33,7 +33,6 @@ class HomeDetailPage extends StatelessWidget {
             //   child: "Add to cart".text.make(),
             // ).wh(150, 50)
             AddToCart(
-              
               catalog: catalog,
             ).wh(150, 50)
           ],

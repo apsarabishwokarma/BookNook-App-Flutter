@@ -412,6 +412,9 @@ child: UserAccountsDrawerHeader(
 
 ## Day 26 - VelocityX State Management | VxState | VxStore
 
+
+## Day 27 -
+
 ```
 
 ```

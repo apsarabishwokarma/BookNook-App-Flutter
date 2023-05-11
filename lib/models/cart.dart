@@ -1,4 +1,6 @@
+import 'package:flutter_learning/core/store.dart';
 import 'package:flutter_learning/models/catalog.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class CartModel {
   //catalog fields _ private
@@ -39,5 +41,16 @@ class CartModel {
   //remove item
   void remove(Item item) {
     _itemIds.remove(item.id);
+  }
+}
+
+class AddMutation extends VxMutation<MyStore> {
+  // final int id;
+  final Item item;
+
+  AddMutation(this.item);
+  @override
+  perform() {
+    store?.cart._itemIds.add(item.id);
   }
 }
