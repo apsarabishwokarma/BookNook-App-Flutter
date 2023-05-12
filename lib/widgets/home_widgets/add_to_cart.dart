@@ -8,10 +8,7 @@ import '../../models/catalog.dart';
 
 class AddToCart extends StatelessWidget {
   final Item catalog;
-  // const AddToCart(
-  //   Key? key,
-  //   this.catalog,
-  // ) : super(key: key);
+
   const AddToCart({
     Key? key,
     required this.catalog,
@@ -21,7 +18,6 @@ class AddToCart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //VxState.
     VxState.watch(context, on: [AddMutation, RemoveMutation]);
     final CartModel cart = (VxState.store as MyStore).cart;
     bool isInCart = cart.items.contains(catalog) ?? false;
@@ -40,9 +36,6 @@ class AddToCart extends StatelessWidget {
             )),
         child: isInCart
             ? const Icon(Icons.done)
-            : const Icon(CupertinoIcons.cart_badge_plus)
-        //Icons.add_shopping_cart_outlined)
-        //"Add to cart".text.make(),
-        );
+            : const Icon(CupertinoIcons.cart_badge_plus));
   }
 }
