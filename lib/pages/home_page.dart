@@ -8,7 +8,6 @@ import 'package:flutter_learning/models/cart.dart';
 import 'package:flutter_learning/models/catalog.dart';
 import 'package:flutter_learning/utils/routes.dart';
 import 'package:velocity_x/velocity_x.dart';
-
 import '../widgets/home_widgets/catalog_header.dart';
 import '../widgets/home_widgets/catalog_list.dart';
 
@@ -23,6 +22,7 @@ class _HomePageState extends State<HomePage> {
   final int days = 30;
 
   final String name = "codepur";
+  final url = "";
 
   @override
   void initState() {
