@@ -5,13 +5,9 @@ import 'package:flutter_learning/models/cart.dart';
 import 'package:flutter_learning/models/catalog.dart';
 
 class MyStore extends VxStore {
-  CatalogModel catalog;
-  CartModel cart;
-
-  MyStore(
-    this.catalog,
-    this.cart,
-  ) {
+  late CatalogModel catalog;
+  late CartModel cart;
+  MyStore() {
     catalog = CatalogModel();
     cart = CartModel();
     cart.catalog = catalog;

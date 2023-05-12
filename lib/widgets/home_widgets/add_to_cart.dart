@@ -28,13 +28,7 @@ class AddToCart extends StatelessWidget {
     return ElevatedButton(
         onPressed: () {
           if (!isInCart) {
-            //isInCart = isInCart.toggle();
-            final catalog = CatalogModel();
-            // cart.catalog = catalog;
-            // cart.add(catalog as Item);
-            AddMutation(catalog as Item);
-
-            // setState(() {});
+            AddMutation(catalog);
           }
         },
         style: ButtonStyle(
