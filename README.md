@@ -415,6 +415,8 @@ child: UserAccountsDrawerHeader(
 
 ## Day 28 VelocityX State Management | VxBuilder | VxConsumer
 
+## Day 29 - HTTP | API | Networking | Badge
+
 ```
 
 ```

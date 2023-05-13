@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_learning/core/store.dart';
 import 'package:flutter_learning/models/cart.dart';
 import 'package:flutter_learning/models/catalog.dart';
@@ -10,6 +9,7 @@ import 'package:flutter_learning/utils/routes.dart';
 import 'package:velocity_x/velocity_x.dart';
 import '../widgets/home_widgets/catalog_header.dart';
 import '../widgets/home_widgets/catalog_list.dart';
+import 'package:http/http.dart' as http;
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
   final int days = 30;
 
   final String name = "codepur";
-  final url = "";
+  final url = "https://api.jsonbin.io/v3/b/645fb7889d312622a35d8510";
 
   @override
   void initState() {
@@ -32,8 +32,11 @@ class _HomePageState extends State<HomePage> {
 
   loadData() async {
     await Future.delayed(const Duration(seconds: 2));
-    final catalogJson =
-        await rootBundle.loadString("assets/files/catalog.json");
+    // final catalogJson =
+    //     await rootBundle.loadString("assets/files/catalog.json");
+
+    final response = await http.get(Uri.parse(url));
+    final catalogJson = response.body;
     final decodedData = jsonDecode(catalogJson);
     //print(decodedData);
     var productsData = decodedData["books"];
