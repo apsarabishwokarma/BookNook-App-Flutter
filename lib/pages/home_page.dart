@@ -31,26 +31,30 @@ class _HomePageState extends State<HomePage> {
   }
 
   loadData() async {
-    await Future.delayed(const Duration(seconds: 2));
+    // await Future.delayed(const Duration(seconds: 2));
     // final catalogJson =
     //     await rootBundle.loadString("assets/files/catalog.json");
 
-    final response = await http.get(Uri.parse(url));
-    final catalogJson = response.body;
-    final decodedData = jsonDecode(catalogJson);
-    //print(decodedData);
-    var productsData = decodedData["books"];
-    //print(productsData);
-    CatalogModel.items = List.from(productsData)
-        .map<Item>((item) => Item.fromMap(item))
-        .toList();
-    setState(() {});
+    try {
+      final response = await http.get(Uri.parse(url));
+      final catalogJson = response.body;
+      final decodedData = jsonDecode(catalogJson);
+      print(decodedData);
+      var productsData = decodedData["record"]["books"];
+      //print(productsData);
+      CatalogModel.items = List.from(productsData).map<Item>((item) => Item.fromMap(item)).toList();
+      setState(() {});
+    } catch (e) {
+      print(e.toString());
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     final cart = (VxState.store as MyStore).cart;
-    return Scaffold(
+    return RefreshIndicator(
+      onRefresh: () => loadData(),
+      child: Scaffold(
         backgroundColor: context.canvasColor,
         floatingActionButton: VxBuilder(
           mutations: const {AddMutation, RemoveMutation},
@@ -80,9 +84,12 @@ class _HomePageState extends State<HomePage> {
                   const CatalogList().py16().expand()
                 else
                   const CircularProgressIndicator().centered().py16().expand(),
+                Text(CatalogModel.items.length.toString()),
               ],
             ),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }
